@@ -1,0 +1,123 @@
+#portfolio{
+  background-color: var(--color-bg-variant);
+  padding: 7rem 0;
+}
+
+#portfolio > h2 {
+  margin-bottom: 3rem;
+}
+
+.portfolio_card_container {
+  display: flex;
+  gap: 5%;
+  justify-content: space-around;
+}
+
+.portfolio_card{
+  width: 30%;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 16px;
+  -moz-box-shadow: 0 0 40px #ccc;
+  -webkit-box-shadow: 0 0 40px #ccc;
+  box-shadow: 0 0 20px #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.portfolio_card_desc .title{
+  text-align: center;
+  margin: 3% 0 3% 0;
+}
+
+.portfolio_card_desc .img{
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  margin: 3% 0 3% 0;
+}
+
+.portfolio_card_desc .img img{
+  width: 40%;
+}
+
+.portfolio_card_desc .img.erv img{
+  background-color: white;
+}
+
+.portfolio_card_desc .description{
+  padding: 10px;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.portfolio .reveal{
+  position: relative;
+  transform: translateY(30%);
+  opacity: 0;
+  transition: all var(--speed) ease;
+}
+
+.portfolio .reveal.revealed{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+
+@media screen and (max-width: 1024px) { 
+
+  #portfolio > h5 {
+    font-size: 0.8rem;
+  }
+
+  #portfolio > h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio_card_container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio_card{
+    width: 60%;
+    margin: 1rem;
+  }
+
+  .portfolio_card_desc .title{
+    font-size: 1.2rem;
+  }
+
+  .portfolio_card_desc .img img{
+    width: 60%;
+  }
+
+  .portfolio_card_desc .description{
+    font-size: 1rem;
+  }
+}
+
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+
+@media screen and (max-width: 600px) {
+  .portfolio_title {
+    font-size: 2rem;
+  }
+
+  .portfolio_card_container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio_card{
+    width: 80%;
+    margin: 10px;
+  }
+
+  .portfolio_card_desc .img img{
+    width: 80%;
+  }
+}

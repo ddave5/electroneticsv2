@@ -1,0 +1,110 @@
+.opening__video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.opening__image {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.dark__blur {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(0,0,0,.6);
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 20rem 0 10rem 0;
+}
+
+h1, h2 {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+}
+
+.opening__title {
+  font-size: 3rem;
+  text-transform: Uppercase;
+  text-align: center;
+}
+
+.opening__subtitle { font-size: 1.5rem; }
+
+.content__container {
+  width: 100%;
+  background: var(--color-bg);
+  border-radius: 64px 64px 0 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  background: #fff;
+}
+
+.layerIntroPortfolio {
+  background: url('../../assets/images/waves/wavePortfolio.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layerPortfolioContact {
+  background: url('../../assets/images/waves/waveContact.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layerIntro {
+  background: url('../../assets/images/waves/waveIntro.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 600px) {
+
+  .opening__title {
+    font-size: 1.8rem;
+  }
+
+  .opening__subtitle {
+    font-size: 1.3rem;
+  }
+
+  .title__container {
+    margin: 15rem 0;
+  }
+}

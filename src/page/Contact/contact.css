@@ -1,0 +1,232 @@
+#contact {
+  padding-top: 10rem;
+  background-color: var(--color-bg-subpage);
+  padding-bottom: 2rem;
+}
+
+#contact.whitening {
+  padding-top: 0;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+h5, h2 {
+  text-align: center;
+}
+
+#contact > h2 {
+  margin-bottom: 3rem;
+}
+
+#contact.whitening > h2 {
+  color: var(--color-bg);
+}
+
+.contact__container{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.information__container > p {
+  text-align: center;
+}
+
+.information__container{
+  background: var(--color-primary-variant);
+  color: var(--color-bg);
+  padding: 1rem;
+  border-radius: 32px 0 0 32px;
+}
+
+.information__container > h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.information__container > p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.information__chip__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.information__chip {
+  background: var(--color-bg);
+  border-radius: 16px;
+  text-align: center;
+  width: 60%;
+  color: var(--color-primary-variant);
+  transition: var(--transition);
+}
+
+.information__chip:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.information__chip:hover > a{
+  color: var(--color-bg);
+}
+
+.information__chip .information__chip__icon {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.information__chip .information__text,
+.information__chip  .facebook__link {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.information__chip > a {
+  display: block;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* ============== FORM ==================== */
+
+.email__container {
+  padding: 2rem;
+  border: 1px solid var(--color-primary-variant);
+  border-radius: 0 32px 32px 0;
+  text-align: center;
+}
+
+.email__container > h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  border: 0.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--color-primary);
+}
+
+#contact.whitening > .contact__container > .email__container > form > input,
+#contact.whitening > .contact__container > .email__container > form > textarea {
+  color: var(--color-bg);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  padding: 20px;
+  border-radius: 16px;
+  transition: 400ms all;
+}
+
+.btn:hover {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+
+}
+
+#contact.whitening > .contact__container > .email__container > form > .btn {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+}
+
+#contact.whitening > .contact__container > .email__container > form > .btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: 1px solid var(--color-bg);
+}
+
+
+.layerSubpage {
+  background: url('../../assets/images/waves/waveSubpage.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layerSubpage.whitening {
+  display: none;
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+
+@media screen and (max-width: 1024px) { 
+  .contact__container {
+    grid-template-columns: 50% 50%;
+  }
+
+  .information__chip {
+    width: 70%;
+  }
+
+  .information__chip .information__chip__icon {
+    font-size: 1.5rem;
+  }
+  
+  .information__chip .information__text {
+    font-size: 0.75rem;
+  }
+
+  .information__chip  .facebook__link {
+    font-size: 0.75rem;
+  }
+  
+  .information__chip > a {
+    font-size: .9rem;
+  }
+}
+
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+  
+@media screen and (max-width: 600px) {
+
+  .contact__container {
+    grid-template-columns: 1fr;
+  }
+
+  .information__container {
+    border-radius: 32px 32px 0 0;
+    text-align: center;
+  }
+
+  .email__container {
+    border-radius: 0 0 32px 32px;
+  }
+
+  .information__chip .information__chip__icon {
+    font-size: 1.5rem;
+  }
+  
+  .information__chip .information__text,
+  .information__chip  .facebook__link {
+    font-size: 0.7rem;
+  }
+  
+  .information__chip > a {
+    font-size: .9rem;
+  }
+
+}

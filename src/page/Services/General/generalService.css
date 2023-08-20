@@ -1,0 +1,112 @@
+.general__container {
+  padding: 3rem;
+  background-color: var(--color-bg-variant);
+  border-radius: 16px;
+}
+
+.general__container > h2{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.first__part, 
+.second__part,
+.third__part {
+  display: grid;
+  gap: 1%;
+}
+
+.first__part {
+  grid-template-columns: 30% 68%;
+  margin-bottom: 1%;
+}
+
+.second__part {
+  grid-template-columns: 37% 61%;
+  margin-bottom: 1%;
+}
+
+.third__part {
+  grid-template-columns: 40% 58%;
+}
+
+.second__part__images {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1%;
+}
+
+.first__part > p, 
+.second__part > p,
+.third__part > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 0 2rem;
+  border-radius: 8px;
+}
+
+.first__part > p {
+  background-color: var(--color-general-service-first);
+}
+
+.second__part > p {
+  background-color: var(--color-general-service-second);
+}
+
+.third__part > p {
+  background-color: var(--color-general-service-third);
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM-LARGE DEVICES) ============================ */
+
+@media screen and (max-width: 1350px) {
+
+  .second__part__images {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+
+@media screen and (max-width: 1024px) {
+
+  .general__container {
+    border-radius: 32px 32px 0 0;
+  }
+
+  .general__container__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first__part, 
+  .second__part, 
+  .third__part {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    width: 80%;
+  }
+}
+
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+
+@media screen and (max-width: 600px) {
+  .first__part, 
+  .second__part, 
+  .third__part {
+    width: 100%;
+  }
+
+  .first__part > p, 
+  .second__part > p,
+  .third__part > p {
+    font-size: 0.75rem;
+  }
+}

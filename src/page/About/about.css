@@ -1,0 +1,88 @@
+#about {
+  padding-top: 10rem;
+  background-color: var(--color-bg-subpage);
+}
+
+#about > h5 {
+  font-size: 1.2rem;
+}
+
+#about > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.about__us__part{
+  display: grid;
+  grid-template-columns: 50% 45%;
+  gap: 5%;
+  margin-bottom: 6rem;
+}
+
+.about__us__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__us__img > img {
+  max-width: 50%;
+  border-radius: 16px;
+}
+
+.about__us__text {
+  display: flex;
+  align-items: center;
+  background-color: rgba(27, 27, 27, .4);
+  border: 2px solid var(--color-primary);
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.about__us__text > p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.motto__part > p {
+  font-family: 'Solitreo', cursive;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+.carousel__part {
+  height: calc(5rem + 300px);
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+
+@media screen and (max-width: 1024px) {
+  .about__us__part {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__us__img { 
+    width: 100%;
+  }
+
+  .about__us__img > img{
+    max-width: 50%;
+  }
+
+  
+}
+
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+
+@media screen and (max-width: 600px) {
+  .about__us__text > p{
+    font-size: 0.9rem;
+  }
+
+  .about__us__img > img{
+    max-width: 70%;
+  }
+}
